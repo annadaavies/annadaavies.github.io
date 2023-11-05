@@ -16,9 +16,11 @@
 
         }
 
+
+
         body {
-            background-color: rgb(0, 0, 33);
-            color: white;
+            background-color: #fffaff;
+            color: #fffaff;
             font-family: 'Poppins', sans-serif;
             font-size: 14px;
         }
@@ -28,7 +30,7 @@
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color: rgb(18, 18, 62);
+            background-color: #0a2463;
         }
 
         nav ul {
@@ -47,8 +49,16 @@
         }
 
         nav ul li a:hover {
-            color: rgb(153, 153, 226);
-            font-size: 1.01rem
+            color: #4a6fa5;
+            font-size: 1.01rem;
+
+        }
+
+        main hr {
+            border: 1;
+            background: #1e1b18;
+            height: 1.2px;
+            margin: 40px 84px;
         }
 
         .left {
@@ -58,7 +68,7 @@
         .firstSection {
             display: flex;
             justify-content: space-around;
-            margin: 80px 0;
+            margin: 130px 0;
         }
 
         .firstSection>div {
@@ -68,6 +78,23 @@
         .leftSection {
             font-size: 2.01rem;
             margin: 110px 0;
+            color: #1e1b18
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #3e92cc;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 3px;
         }
 
         .rightSection img {
@@ -76,16 +103,102 @@
         }
 
         .purple {
-            color: rgb(170, 107, 228);
+            color: #3e92cc;
+        }
+
+
+        .text-gray {
+            color: #1e1b18;
         }
 
         #element {
-            color: rgb(170, 107, 228);
+            color: #3e92cc;
         }
 
         .secondSection {
             max-width: 80vw;
-            margin: auto
+            margin: auto;
+            height: 80vh;
+            color: #1e1b18;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            color: #1e1b18;
+        }
+
+        .secondSection .box {
+            background: #1e1b18;
+            width: 80vw;
+            height: 2px;
+            margin: 90px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: #1e1b18;
+            margin: 0px 91px;
+
+        }
+
+        .image-top-one {
+            width: 50px;
+            position: relative;
+            top: -40px;
+            left: -22px;
+        }
+
+        .image-top-two {
+            width: 45px;
+            position: relative;
+            top: -50px;
+            left: -22px;
+        }
+
+
+        .vertical-title {
+            position: relative;
+            top: 63px;
+            width: 150px;
+            font-size: 14px;
+            color: #3e92cc;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 70px;
+            color: #1e1b18;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0a2463;
+            height: 233px;
+        }
+
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: #fffaff;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -112,6 +225,14 @@
                 Hi, My name is <span class="purple">Anna</span>
                 <div>and I am a passionate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/11kLBwg9Z67uwcTaNWFA_pRJdDwzwmhyb/view?usp=sharing">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/annadaavies">
+                        <button class="btn">Visit GitHub</button>
+                    </a>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="portfoliobg.png" alt="">
@@ -121,10 +242,120 @@
         <hr>
 
         <section class="secondSection">
-            <h1>Past Experience</h1>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top-one" src="innospire.png" alt="">
+                    <div class="vertical-title">
+                        Innospire Internship
+                        <br>(Oct 2023 - Nov 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-two" src="black-circle.png" alt="">
+                    <div class="vertical-title">
+                        Position
+                        <br>(YYYY-YYYY)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-two" src="black-circle.png" alt="">
+                    <div class="vertical-title">
+                        Position
+                        <br>(YYYY-YYYY)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-two" src="black-circle.png" alt="">
+                    <div class="vertical-title">
+                        Position
+                        <br>(YYYY-YYYY)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-two" src="black-circle.png" alt="">
+                    <div class="vertical-title">
+                        Position
+                        <br>(YYYY-YYYY)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-two" src="black-circle.png" alt="">
+                    <div class="vertical-title">
+                        Position
+                        <br>(YYYY-YYYY)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor nibh ac iaculis
+                        accumsan. Pellentesque vel tellus eget arcu rhoncus imperdiet vel quis diam.
+                    </div>
+                </div>
+
+            </div>
 
         </section>
     </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Anna's Computer Science Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Awards</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Awards</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Awards</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copright &copy; annasportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
